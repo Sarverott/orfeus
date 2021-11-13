@@ -1,30 +1,304 @@
-title=inwazja na katiusze
-description=lata po zimnej wojnie odkryto sposób na wskrzeszenie stalina - puszczenie mu supergłośno kalinki, aby zaczoł tańczyć jak wściekły. Tanecznym krokiem zaczyna odzyskiwać władzę w zsrr
-start=moskwa
-end=start https://www.youtube.com/watch?v=BulFwGSi8bc
+title=That annoing vending machine...
+description=You forget your lunch. You are thirsty and hungry. Every nearby shop was destroyed in anti-capitalistic attack by vegan-terrorists using meteor rain. All pubs, snackbars and other similar to restaurant places are in quarantine caused by disease of the insusever sausages. Else vendor machines are in areas where electricity is off today. Only left option is in front of you...
+start=letsgo
 
-### BEG moskwa
-name=ROSYJA
-description=najpierw mateczka
-cacheOpt=tokio
-cacheOpt=kazah
-### END moskwa
+### BEG letsgo
+name=buy something
+description=DISPLAY SAYS: "hello customer, select product from available list :)"
+cacheOpt=drug
+cacheOpt=rock
+cacheOpt=cup
+cacheOpt=happy
+cacheOpt=leave
+cacheOpt=autodestruct
+### END letsgo
 
-### BEG tokio
-name=japonia
-description=jjjjaponjjjja to nie zsrr, ale jeszcze są jakieś szanse ty taneczna bestio. czas na nowe zsrr i nowe tereny...
-cacheOpt=moskwa
-### END tokio
+### BEG rock
+name=rock
+description=DISPLAY SAYS: "middle-sized boulder from edge of pound costs 5$. Do you want to order it?"
+cacheOpt=rockyes
+cacheOpt=standardno
+### END rock
 
-### BEG kazah
-name=kazahstan
-description=kazahstan stawia poważne opory ale już raz ich spacyfikowałeś. co teraz wodzu?
-cacheOpt=usa
-cacheOpt=tokio
-cacheOpt=moskwa
-### END kazah
+### BEG rockyes
+name=yes
+description=rock lands in disposal pocket
+cacheOpt=rockeat
+cacheOpt=rockleave
+### END rockyes
 
-### BEG usa
-name=ameryka
-description=wojska amerykanskie odpierają atak, wkraczają do rosji i ty, Stalin zostajesz nową atrakcją Parku Obalonych Rządów przez usa, patrząc z za szyby na turystów
-### END usa
+### BEG rockeat
+name=eat it
+description=supprisingly it was tasty rock, you have no longer teeths, your next meal was in hospital, soup from pumpkin mixed into creme via special hole in your badges. you regrets nothing, dinner rocks rules
+### END rockeat
+
+### BEG rockleave
+name=throw away
+description=why do you even order it?
+cacheOpt=standardcontinue
+### END rockleave
+
+### BEG autodestruct
+name=SELFDESTRUCTION
+description=DISPLAY SAYS: "self-destruction button was pressed, bye and have nice day :)". explosion 2 seconds after button was pressed annihilated you and machine. all living beings in nearby neighborhood vaporizes. local society stays uncharmed until starvation to death. because only available source of food and drinks has self-destruct button that was pressed by you...
+### END autodestruct
+
+### BEG cup
+name=paper cup
+description=DISPLAY SAYS: "Oops! currently there are no more cups left, please try again later :) "
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END cup
+
+### BEG drug
+name=illegal drugs
+description=DISPLAY SAYS: "package of cocaine, LSD, marihuana and ketamine costs 500$. Do you want to order it?" is this a joke?
+cacheOpt=drugyes
+cacheOpt=standardno
+### END drug
+
+### BEG drugyes
+name=yes
+description=package lands in disposal pocket... realy this is not a joke?
+cacheOpt=drugtake
+### END drugyes
+
+### BEG drugtake
+name=get ordered item
+description=you open it, it was a lot of it and this is not a joke
+cacheOpt=drugbelive
+### END drugtake
+
+### BEG drugbelive
+name=belive that it is no joke
+description=you didn't have chance to think about whats next. in that moment when you realized what just happend police forces arrested you for having too much illegal substances
+cacheOpt=druglaw
+### END drugbelive
+
+### BEG druglaw
+name=call lawyer
+description=unfortunately you lose in court, because your lawer was also lawer of vending machine. next many years you will spend in prison... but in prison there are kitchens and in prison there are provided lunches for you... for next 10 years... so you win... somhow... in some way... i think...
+### END druglaw
+
+### BEG happy
+name=happiness
+description=DISPLAY SAYS: "being happy from all of you life costs 280,000,000,000$. Do you want to order it?"
+cacheOpt=happyyes
+cacheOpt=standardno
+### END happy
+
+### BEG insertcode
+name=use keypad
+description=DISPLAY SAYS: "insert admin password: "
+cacheOpt=insertcode0err
+cacheOpt=insertcode1ok
+cacheOpt=insertcode2err
+cacheOpt=insertcode3err
+cacheOpt=insertcode4err
+cacheOpt=insertcode5err
+cacheOpt=insertcode6err
+cacheOpt=insertcode7err
+cacheOpt=insertcode8err
+cacheOpt=insertcode9err
+cacheOpt=insertcodeentererr
+### END insertcode
+
+### BEG insertcode1ok
+name=1
+description=DISPLAY SAYS: "insert admin password: *"
+cacheOpt=insertcode0err
+cacheOpt=insertcode1err
+cacheOpt=insertcode2ok
+cacheOpt=insertcode3err
+cacheOpt=insertcode4err
+cacheOpt=insertcode5err
+cacheOpt=insertcode6err
+cacheOpt=insertcode7err
+cacheOpt=insertcode8err
+cacheOpt=insertcode9err
+cacheOpt=insertcodeentererr
+### END insertcode1ok
+
+### BEG insertcode2ok
+name=2
+description=DISPLAY SAYS: "insert admin password: **"
+cacheOpt=insertcode0err
+cacheOpt=insertcode1err
+cacheOpt=insertcode2err
+cacheOpt=insertcode3ok
+cacheOpt=insertcode4err
+cacheOpt=insertcode5err
+cacheOpt=insertcode6err
+cacheOpt=insertcode7err
+cacheOpt=insertcode8err
+cacheOpt=insertcode9err
+cacheOpt=insertcodeentererr
+### END insertcode2ok
+
+### BEG insertcode3ok
+name=3
+description=DISPLAY SAYS: "insert admin password: ***"
+cacheOpt=insertcode0err
+cacheOpt=insertcode1err
+cacheOpt=insertcode2err
+cacheOpt=insertcode3err
+cacheOpt=insertcode4ok
+cacheOpt=insertcode5err
+cacheOpt=insertcode6err
+cacheOpt=insertcode7err
+cacheOpt=insertcode8err
+cacheOpt=insertcode9err
+cacheOpt=insertcodeentererr
+### END insertcode3ok
+
+### BEG insertcode4ok
+name=4
+description=DISPLAY SAYS: "insert service code: ****"
+cacheOpt=insertcode0err
+cacheOpt=insertcode1err
+cacheOpt=insertcode2err
+cacheOpt=insertcode3err
+cacheOpt=insertcode4err
+cacheOpt=insertcode5err
+cacheOpt=insertcode6err
+cacheOpt=insertcode7err
+cacheOpt=insertcode8err
+cacheOpt=insertcode9err
+cacheOpt=insertcodeenterok
+### END insertcode4ok
+
+### BEG insertcode1err
+name=1
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode1err
+
+### BEG insertcode2err
+name=2
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode2err
+
+### BEG insertcode3err
+name=3
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode3err
+
+### BEG insertcode4err
+name=4
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode4err
+
+### BEG insertcode5err
+name=5
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode5err
+
+### BEG insertcode6err
+name=6
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode6err
+
+### BEG insertcode7err
+name=7
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode7err
+
+### BEG insertcode8err
+name=8
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode8err
+
+### BEG insertcode9err
+name=9
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode9err
+
+### BEG insertcode0err
+name=0
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcode0err
+
+### BEG insertcodeentererr
+name=enter
+description=DISPLAY SAYS: "WRONG PASSWORD!!! access denined!"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END insertcodeentererr
+
+### BEG insertcodeenterok
+name=enter
+description=something is not ok... DISPLAY SAYS: "matrix secrets unlocked!" and you realize that all around you is just text interface on black background... you see that all posibilities of your faith exists in single TXT file... now you know that your ego and existense depends on narrators point of narration... and that other, non-textal being that from out of ASCII universe decides what will be your route of faith... in that point your hunger and tirst are basicly more teoritical than existance of you and vending machine... that knowledge should be graduation of your winning, but it that knowledge questations your and machine existance so in this situation winning does't matters anymore
+### END insertcodeenterok
+
+### BEG standardno
+name=no
+description=DISPLAY SAYS: "Exiting! what do you want to do now dearest customer? :)"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END standardno
+
+### BEG standardcontinue
+name=continue
+description=DISPLAY SAYS: "Thank you for choosing VEND.ANY.2000 :). do you wish to continue?"
+cacheOpt=letsgo
+cacheOpt=leave
+cacheOpt=insertcode
+### END standardcontinue
+
+### BEG happyyes
+name=yes
+description=DISPLAY SAYS: "insert coin, accepted 0.25$ only". it seams that road to happiness is full of thorns...
+cacheOpt=happyincoin
+cacheOpt=standardno
+### END happyyes
+
+### BEG happyincoin
+name=insert coin
+description=coin falls in, you found another in pocket. DISPLAY SAYS: "insert coin, accepted 0.25$ only"
+cacheOpt=happyincoin
+cacheOpt=happyabort
+### END happyincoin
+
+### BEG happyabort
+name=abort operation
+description=only one coin fells into change pocket. DISPLAY SAYS: "operation aborted! all your inserted money is in change pocket :)". you resign from happiness, here you are.
+cacheOpt=letsgo
+cacheOpt=leave
+### END happyabort
+
+### BEG leave
+name=leave machine
+description=You left the machine. Your stomach is empty. Your vital forces are running out. Your life is ending. But in the end, you got your way, you won with The Vending Machine by starving to death... well, in that situation proudness definitly is NOT smartness.
+### END leave
