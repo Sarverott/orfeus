@@ -1,0 +1,30 @@
+title=inwazja na katiusze
+description=lata po zimnej wojnie odkryto sposób na wskrzeszenie stalina - puszczenie mu supergłośno kalinki, aby zaczoł tańczyć jak wściekły. Tanecznym krokiem zaczyna odzyskiwać władzę w zsrr
+start=moskwa
+end=start https://www.youtube.com/watch?v=BulFwGSi8bc
+
+### BEG moskwa
+name=ROSYJA
+description=najpierw mateczka
+cacheOpt=tokio
+cacheOpt=kazah
+### END moskwa
+
+### BEG tokio
+name=japonia
+description=jjjjaponjjjja to nie zsrr, ale jeszcze są jakieś szanse ty taneczna bestio. czas na nowe zsrr i nowe tereny...
+cacheOpt=moskwa
+### END tokio
+
+### BEG kazah
+name=kazahstan
+description=kazahstan stawia poważne opory ale już raz ich spacyfikowałeś. co teraz wodzu?
+cacheOpt=usa
+cacheOpt=tokio
+cacheOpt=moskwa
+### END kazah
+
+### BEG usa
+name=ameryka
+description=wojska amerykanskie odpierają atak, wkraczają do rosji i ty, Stalin zostajesz nową atrakcją Parku Obalonych Rządów przez usa, patrząc z za szyby na turystów
+### END usa

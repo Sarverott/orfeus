@@ -1,0 +1,24 @@
+{
+  "name": "orfeus",
+  "version": "1.0.0",
+  "description": "simple textgame engine in node.js",
+  "main": "text-rpg-sandbox.js",
+  "scripts": {
+    "test": "node text-rpg-sandbox.js debug",
+    "start": "node text-rpg-sandbox.js"
+  },
+  "keywords": [
+    "text",
+    "game",
+    "console",
+    "emulator",
+    "engine",
+    "orfeus"
+  ],
+  "author": "Sett Sarverott",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sarverott/orfeus.git"
+  }
+}
